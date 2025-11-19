@@ -1,27 +1,38 @@
-class TestStudent1
-
-{
+class TestStudent1{
 
 public static void main(String[] args)
-
 {
-
-Student1 st = new Student1(); // dal
+Student1 st = new Student1(); // call zero argument constructor
 
 st.display();
 
 double per1 = st.percentage();
 
-System.out.println("Percentage: "+per1);
+System.out.println("Percentage :"+per1);
+
+System.out.println("=======================");
 
 Student1 st1 = new Student1(100, "Paliwal", 30,60,89);
+
+
 
 st1.display();
 
 double per = st1.percentage();
 
-System.out.println("Percentage : "+per);
+
+
+System.out.println("Percentage :"+per);
+
+System.out.println("=======================");
+
+Student1 st2 = new Student1(100, "Paliwal"); 
+
+st2.display();
+
+double per2 = st2.percentage();
+
+System.out.println("Percentage :"+per2);
 
 }
-
 }
