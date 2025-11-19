@@ -1,29 +1,36 @@
 class Student1
 
-}
-
-int rollNumber;
-
-String name;
-
-int sub1, sub2, sub3;
-
-Student() { }
-
-| Student(int r,String n, int s1, int s2, int $3)
-
 {
 
-rollNumber = r;
+int rollNumber;
+String name;
+int sub1, sub2, sub3;
 
+Student1() {System.out.println("Zero Argument"); }
+ Student1(int r,String n, int s1, int s2, int s3)
+{ System.out.println("Five Argument");
+rollNumber = r;
+name=n;
+sub1=s1;
+sub2=s2;
+sub3=s3;
+}
+
+Student1 (int r,String n)
+{System.out.println("Two Argument");
+rollNumber = r;
 name=n;
 
+}
+
+Student1 (int s1,int s2,int s3)
+
+{
+System.out.println("Three Argument");
+
 sub1=s1;
-
 sub2=s2;
-
-sub3-s3;
-
+sub3=s3;
 }
 
 void display()
@@ -31,14 +38,12 @@ void display()
 {
 
 System.out.println("Roll Number: "+rollNumber);
-
 System.out.println("Name: "+name);
-
 System.out.println("Marks: "+sub1+" "+sub2+" "+sub2+" "+sub3);
 
-} double percentage()
+} double percentage(){
 
-return (sub1+sub2+sub3)/3.0; {
+return (sub1+sub2+sub3)/3.0; 
 
 }
 
