@@ -1,0 +1,45 @@
+class Student1
+
+}
+
+int rollNumber;
+
+String name;
+
+int sub1, sub2, sub3;
+
+Student() { }
+
+| Student(int r,String n, int s1, int s2, int $3)
+
+{
+
+rollNumber = r;
+
+name=n;
+
+sub1=s1;
+
+sub2=s2;
+
+sub3-s3;
+
+}
+
+void display()
+
+{
+
+System.out.println("Roll Number: "+rollNumber);
+
+System.out.println("Name: "+name);
+
+System.out.println("Marks: "+sub1+" "+sub2+" "+sub2+" "+sub3);
+
+} double percentage()
+
+return (sub1+sub2+sub3)/3.0; {
+
+}
+
+}
