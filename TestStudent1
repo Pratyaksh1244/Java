@@ -1,0 +1,27 @@
+class TestStudent1
+
+{
+
+public static void main(String[] args)
+
+{
+
+Student1 st = new Student1(); // dal
+
+st.display();
+
+double per1 = st.percentage();
+
+System.out.println("Percentage: "+per1);
+
+Student1 st1 = new Student1(100, "Paliwal", 30,60,89);
+
+st1.display();
+
+double per = st1.percentage();
+
+System.out.println("Percentage : "+per);
+
+}
+
+}
