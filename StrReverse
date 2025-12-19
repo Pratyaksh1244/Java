@@ -1,41 +1,27 @@
 import java.util.Scanner;
 
-class StrRev1
+class StrRev1 {
 
-{
+    static void revStr(String x) {
+        // loop from last index to first
+        for (int i = x.length() - 1; i >= 0; i--) {
+            System.out.print(x.charAt(i));
+        }
+        System.out.print(" ");
+    }
 
-static void revStr(String x)
+    public static void main(String ar[]) {
+        Scanner sc = new Scanner(System.in);
 
-{
+        System.out.println("Enter any string:");
+        String s1 = sc.nextLine();
 
-for(int i=x.length()-1;1>=0;i--)
+        System.out.println("Reverse string:");
 
-{
+        String p[] = s1.split(" ");
 
-System.out.print(x.charAt(i));
-
-System.out.print(" ");
-
-}
-
-public static void main(String ar[])
-
-{
-
-Scanner sc=new Scanner(System.in);
-
-System.out.println("Enter any string");
-
-String s1=sc.nextLine();
-
-System.out.println("Reverse string");
-
-String p[]=s1.split(" ");
-
-for(String q:p)
-
-revStr(q);
-
-}
-
+        for (String q : p) {
+            revStr(q);
+        }
+    }
 }
